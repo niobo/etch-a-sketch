@@ -8,12 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Etch a Sketch</h1>
+    <div class="header">
+        <h1>Etch a Sketch</h1>
+    </div>
 
-    <div class="content">
+    <div class="main">
         <div class="settings">
-            <input type="color" />
+            <div><input type="color" id="color-picker" value="#19c4ff"/></div>
+            <div><button id="pencil"><img src="./img/icons/pencil.png" alt="Pencil"></button></div>
+            <div><button id="eraser"><img src="./img/icons/eraser.png" alt="Eraser"></button></div>
+            <div><button id="redo"><img src="./img/icons/redo.png" alt="Redo"></button></div>
+
+            <div class="range">
+                <input type="range" id="slider" min="1" max="100" value="16">
+                <p id="size">16 x 16</p>
+            </div>
         </div>
+
+        <div class="grid">
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><a href="https://github.com/niobo">Niobo © 2023</a></p>
     </div>
     
     <script src="./script.js"></script>
